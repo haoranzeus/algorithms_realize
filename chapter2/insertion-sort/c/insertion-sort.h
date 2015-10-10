@@ -5,5 +5,6 @@
 #ifndef INSERTION_SORT_H_
 #define INSERTION_SORT_H_
 void insertion_sort(int *data, int datalen);
+void insertion_sort_desc(int *data, int datalen);
 
 #endif
