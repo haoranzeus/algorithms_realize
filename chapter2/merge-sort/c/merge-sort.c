@@ -15,10 +15,18 @@ void merge(int *num_arr, int start, int middle, int end) {
 	int i = 0, j = 0;
 	for (int k = start; k <= end; ++k) {
 		if (i == n1) {
-			num_arr[k] = r[j++];
+			//num_arr[k] = r[j++];
+			while (k <= end) {
+				num_arr[k++] = r[j++];
+			}
+			break;
 		}
 		else if (j == n2) {
-			num_arr[k] = l[i++];
+			//num_arr[k] = l[i++];
+			while (k <= end) {
+				num_arr[k++] = l[i++];
+			}
+			break;
 		}
 		else if (l[i] < r[j]) {
 			num_arr[k] = l[i++];

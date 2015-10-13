@@ -14,10 +14,6 @@ int main() {
 
 	printf("=====merge_sort() test=====\n");
 	int arr2[] = {1,123,2,12,32,12,888,432,43,2,15};
-	for (int i = 0; i < sizeof(arr2) / sizeof(int); ++i)
-		printf("%d ", arr2[i]);
-	printf("\n");
-	printf("\n");
 	merge_sort(arr2, 0, sizeof(arr2) / sizeof(int) - 1);
 	for (int i = 0; i < sizeof(arr2) / sizeof(int); ++i)
 		printf("%d ", arr2[i]);
